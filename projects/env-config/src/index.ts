@@ -5,3 +5,5 @@
 export * from './lib/env-config.service';
 export * from './lib/env-config.component';
 export * from './lib/env-config.module';
+
+export * from './lib/env/decorators/config.decorator';

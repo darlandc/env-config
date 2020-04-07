@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { environment } from '../../src/environments/environment';
+import { Config } from 'projects/env-config/src';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import { environment } from '../../src/environments/environment';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
+
+  @Config('authMode') authMode;
 
   env: string = '';
   host: string = '';
@@ -25,7 +28,7 @@ export class AppComponent {
   }
 
   tap() {
-    console.log(this.initConfig);
+    console.log(this.authMode);
   }
 
 }
