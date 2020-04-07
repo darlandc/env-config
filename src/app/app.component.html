@@ -7,8 +7,7 @@
 <div style="border: 1px solid blueviolet;">
   <p>ConfigEnv Library</p>
 
-<env-config
-  (setConfig)="getConfig($event)">
+<env-config>
 </env-config>
 
 </div>
@@ -28,5 +27,5 @@
   <p>Application</p>
   <p>Environment: {{ env }}</p>
   <p>Host: {{ host }}</p>
-  <button (click)="tap()">Get config data!</button>
+  <button (click)="tap($any)">Get config data!</button>
 </div>
