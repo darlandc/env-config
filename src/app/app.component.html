@@ -1,0 +1,32 @@
+<!-- <p>Running in: {{env}}</p>
+<p>External Variable: {{ title }}</p>
+<br>
+<p>External Config: {{ clientId }}</p>
+<br><br> -->
+
+<div style="border: 1px solid blueviolet;">
+  <p>ConfigEnv Library</p>
+
+<env-config
+  (setConfig)="getConfig($event)">
+</env-config>
+
+</div>
+<br>
+<br>
+
+<div style="border: 1px solid green; display: none;">
+  <p>Test Library</p>
+
+<lib-test></lib-test>
+</div>
+
+<br>
+<br>
+
+<div style="border: 1px solid lightcoral">
+  <p>Application</p>
+  <p>Environment: {{ env }}</p>
+  <p>Host: {{ host }}</p>
+  <button (click)="tap()">Get config data!</button>
+</div>
