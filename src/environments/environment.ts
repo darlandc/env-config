@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  title: 'Hey look at me, i am a external variable!',
-  env: "dev",
-  clientId: "64319843246800"
+  env: 'dev',
+  host: 'http://localhost.dev.environment.com',
+  authMode: 'BASIC'
 };
 
 /*

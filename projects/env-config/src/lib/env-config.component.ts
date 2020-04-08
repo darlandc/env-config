@@ -1,5 +1,5 @@
 import { IAppConfig } from './env/interfaces/app-config.interface';
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { Config } from './env/decorators/config.decorator';
 import { environment } from 'src/environments/environment';
 
@@ -13,13 +13,15 @@ import { environment } from 'src/environments/environment';
 })
 export class EnvConfigComponent implements OnInit {
 
+  @Input() appEnv;
+
   constructor() {}
 
   ngOnInit() {
   }
 
   tap() {
-    console.log('tap lib');
+    console.log('tap on lib!')
   }
 
 }

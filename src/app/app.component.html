@@ -7,25 +7,28 @@
 <div style="border: 1px solid blueviolet;">
   <p>ConfigEnv Library</p>
 
-<env-config>
+<env-config
+[appEnv]="appEnv">
 </env-config>
 
 </div>
 <br>
-<br>
 
 <div style="border: 1px solid green; display: none;">
+
   <p>Test Library</p>
-
 <lib-test></lib-test>
-</div>
 
-<br>
+</div>
 <br>
 
 <div style="border: 1px solid lightcoral">
+
   <p>Application</p>
   <p>Environment: {{ env }}</p>
   <p>Host: {{ host }}</p>
-  <button (click)="tap($any)">Get config data!</button>
+  <br>
+  <p>Env from application: {{ appEnv }}</p>
+  <button (click)="tap()">tap!</button>
+
 </div>
